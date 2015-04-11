@@ -25,34 +25,21 @@ var arr = [40,50,60];
  
  var arr = [ 40,50,60];
 
-  //Code Here
-
-
-//Next Problem
-
-
-
 //Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
 var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
   var looper = function (family){
-    for(var i =0, i < family.length, i++){
+    for(var i =0; i < family.length; i++){
       alert (family[i]);      
     }
   };
 
-
-//Next problem
-
-
-
-
 //Write a function called reversedLooper that is given letters as it's only argument and loops through the given array backwards alerting every item in the array starting at the end.
   var letters = ['A', 'B', 'C', 'D', 'E'];
   var reversedLooper = function(letters){
-    for (var i= letters.length -1; i >= 0; i--){
+    for (var i= letters.Length -1; i >= 0; i--){
       alert (letters[i]);
     }
-  }
+  };
 
 //Next Problem
 
@@ -76,41 +63,21 @@ var evenFinder = function (nums){
 
 //Write a function called divider that is given three arguments, nums, evens, and odds.
 //Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
-var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+var nums = [1, 2, 34, 54, 55, 34, 32, 11, 19, 17, 54, 66, 13];
 var evens = [];
 var odds = [];
 
-var divider = function (nums, evens, odds){
-  for (var i=0; i < nums.length; i++){
-    if(nums[i] % 2 !==0){
-      odds.push(nums[i]);
-    }else{ 
-    evens.push [i]}
-  }
-};
-  
-
-
-  //Code Here
-
-
-//Next Problem
-
-
-var getRandomArbitrary = function() {
-  return Math.floor(Math.random() * (30 - 0) + 0);
-}
-  var finder = function (numbers){
-  var num = getrandomArbitrary()}
-    for (var i=0; i >numbers.length; i++){
-      if(num === numbers[i]){
-        alert("true"){
+var divider = function (nums, evens, odds) {
+    for (var i = 0; i < nums.length; i++) {
+        if (nums[i] % 2 !== 0) {
+            odds.push(nums[i]);
+        } else {
+            evens.push(nums[i]);
         }
-      }
-  }
-  else{
-    alert("false");
-  }
+    } 
+};
+
+
 
 
 
@@ -130,17 +97,31 @@ var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
   //Code Here
 
 
-//Next problem
+var getRandomArbitrary = function() {
+  return Math.floor(Math.random() * (30 - 0) + 0);
+}
+  var finder = function (numbers){
+  var num = getrandomArbitrary()}
+    for (var i=0; i >numbers.length; i++){
+      if(num === numbers[i]){
+        alert("true"){
+        }
+      }
+  }
+  else{
+    alert("false");
+  }
 
 
 
 var str = 'this is my sentence';
 //Write a function called reverse that takes is given str as it's only argument and returns that string after it's been reversed
-
-  //Code Here
-
-
-//Next Problem
+var reverse = function (str) {
+    var arr = str.split(" "); {
+        revStr = arr.reverse();
+        return revStr.join("");
+    }
+};
 
 
 var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
@@ -156,11 +137,27 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   and the second is an item to add to your grocery list. In addItem add the item you passed in to
   myGroceryList then return the new, updated grocery list.
 */
+var list = function (myGroceryList, removeItem) {
+    for (var i = 0; i < myGroceryList.length; i++) {
+        if (myGroceryList[i] === removeItem) {
+            var newList = shift.myGroceryList[i];
+            return NewList;
+        }
+    }
+};
 
-  //Code Here
+var list = function (myGroceryList, addItem) {
+    for (var i = 0; i < myGroceryList.length; i++) {
+        if (myGroceryList[i] === addItem) {
+            var newList = unshift.myGroceryList[i];
+            return newList;
+        }
+    }
+};
 
-//removeItem('chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
-//addItem('Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
+
+var removeItem = 'chips'
+var addItem = 'Jerky' 
 
 
 
