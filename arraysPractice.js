@@ -114,8 +114,10 @@ var getRandomArbitrary = function() {
 
 
 
-var str = 'this is my sentence';
+
 //Write a function called reverse that takes is given str as it's only argument and returns that string after it's been reversed
+
+var str = 'this is my sentence';
 var reverse = function (str) {
     var arr = str.split(" "); {
         revStr = arr.reverse();
@@ -166,9 +168,12 @@ var addItem = 'Jerky'
 
 
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
-
-  //Code Here
-
+var nums = 214
+var maker = function(nums){
+  for (var i=0; i > nums; i++){
+    var arr1[]= push(i);
+  } return arr1;
+};
 
 
 //Next Problem
@@ -178,8 +183,14 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 //Write a function called addTen that is given 'numbers' as it's only argument and returns a new
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
-  //Code Here
-
+var addTen = function (numbers) {
+  for (var i=0; i < numbers.length; i++){
+      var plusTen = (numbers[i] +10);{
+      numbers.shift(numbers[i]);
+    numbers.unshift(plusTen);
+    }
+  }
+};
 
 
 //Next Problem
